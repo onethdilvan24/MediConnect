@@ -18,21 +18,6 @@
 3️⃣ **Consult & Care** – Connect with your doctor via video call or visit in person.  
 4️⃣ **Receive Prescriptions & Follow-ups** – Access digital prescriptions and schedule follow-ups effortlessly.  
 
-## 🚀 Get Started
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/mediconnect.git
-   ```
-2. Install dependencies:
-   ```sh
-   cd mediconnect
-   npm install  # or yarn install
-   ```
-3. Start the development server:
-   ```sh
-   npm start  # or yarn start
-   ```
 
 ## 💡 Features in Development
 - AI-powered symptom checker 🤖  
