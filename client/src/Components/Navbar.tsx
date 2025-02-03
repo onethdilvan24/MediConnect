@@ -39,7 +39,7 @@ export function Nav() {
         </NavbarLink>
       </NavbarCollapse>
       <div className="flex md:order-2">
-        <Link to="login">
+        <Link to="/login">
         <Button className="rounded-3xl bg-[#1363DF] text-[#CFF5E7]">
           Login
         </Button>
