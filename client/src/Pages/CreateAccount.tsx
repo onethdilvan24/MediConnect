@@ -80,7 +80,7 @@ export function CreateAccount() {
             <p className="text-xs text-[#DFF6FF]">
               Your have alredy an account: {" "}
               <a href="#Login" className="text-[#47B5FF]">
-                <Link to="login">
+                <Link to="/login">
                 Click here
                 </Link>
               </a>{" "}

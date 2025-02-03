@@ -27,7 +27,7 @@ export function Nav() {
           HOME</Link>
         </NavbarLink>
         <NavbarLink href="#" className="text-[#06283D]">
-          <Link to="alldoctors">
+          <Link to="/alldoctors">
           ALL DOCTORS
           </Link>
         </NavbarLink>

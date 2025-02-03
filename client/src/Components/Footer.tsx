@@ -15,7 +15,7 @@ import {
     return (
       <div>
        
-      <Footer container className="white-900 text-white">
+      <Footer container className="bg-[#06283D] text-gray-300">
         <div className="w-full">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 align-bottom">
             <div>
@@ -27,7 +27,7 @@ import {
               />
             </div>
             <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
-              <div>
+              <div className="">
                 <FooterTitle title="About" />
                 <FooterLinkGroup col>
                   <FooterLink href="#">Flowbite</FooterLink>

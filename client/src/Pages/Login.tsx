@@ -62,7 +62,7 @@ export function Login() {
             <div>
               <p className="text-xs text-[#DFF6FF]">
                 Create an new account ?               
-                  <Link to="createaccount" className="text-[#47B5FF]"> Click here</Link>               
+                  <Link to="/createaccount" className="text-[#47B5FF]"> Click here</Link>               
               </p>
               <p className="text-xs text-[#DFF6FF]">
                 Login for Admin:
