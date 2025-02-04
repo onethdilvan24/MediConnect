@@ -1,6 +1,7 @@
 import { Card } from "flowbite-react";
 import { Nav } from "../Components/Navbar";
 import CardCarousel from "../Components/CardCarousel";
+import { ContactUs } from "./ContactUs";
 
 const About = () => {
   return (
@@ -59,6 +60,12 @@ const About = () => {
       <hr className="mx-28 border-[#06283D] pb-8" />
 
       <CardCarousel></CardCarousel>
+
+      <div>
+        <ContactUs></ContactUs>
+      </div>
+
+
     </div>
   );
 };
