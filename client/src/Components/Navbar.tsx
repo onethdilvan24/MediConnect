@@ -24,7 +24,8 @@ export function Nav() {
       <NavbarCollapse>
         <NavbarLink href="#" className="text-[#06283D]" active>
           <Link to="/">
-          HOME</Link>
+          HOME
+          </Link>
         </NavbarLink>
         <NavbarLink href="#" className="text-[#06283D]">
           <Link to="/alldoctors">
@@ -32,10 +33,14 @@ export function Nav() {
           </Link>
         </NavbarLink>
         <NavbarLink href="#" className="text-[#06283D]">
+          <Link to="#">
           SHOP
+          </Link>
         </NavbarLink>
         <NavbarLink href="#" className="text-[#06283D]">
+          <Link to="/about">
           ABOUT
+          </Link>
         </NavbarLink>
       </NavbarCollapse>
       <div className="flex md:order-2">
