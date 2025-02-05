@@ -17,7 +17,7 @@ import {
        
       <Footer container className="bg-[#06283D] text-gray-300">
         <div className="w-full">
-          <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 align-bottom">
+          <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 align-bottom px-10">
             <div>
               <FooterBrand
                 href="https://flowbite.com"
@@ -26,7 +26,7 @@ import {
                 name="Flowbite"
               />
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+            <div className="grid grid-cols-3 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
               <div className="">
                 <FooterTitle title="About" />
                 <FooterLinkGroup col>

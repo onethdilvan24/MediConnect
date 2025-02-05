@@ -2,6 +2,7 @@ import { Card } from "flowbite-react";
 import { Nav } from "../Components/Navbar";
 import CardCarousel from "../Components/CardCarousel";
 import { ContactUs } from "./ContactUs";
+import { Foot } from "../Components/Footer";
 
 const About = () => {
   return (
@@ -44,10 +45,10 @@ const About = () => {
             Our Vision
           </h5>
           <p className="flex justify-center px-14 pb-6 text-center font-normal text-[#DFF6FF]">
-            At Prescripto, our goal is to give each consumer a flawless
-            healthcare experience. By bridging the gap between patients and
-            healthcare professionals, we hope to make it simpler for you to get
-            the treatment you require at the appropriate time.
+          Our vision is to develop a sophisticated and user-centric mobile application that transforms the patient-provider interaction paradigm. We are committed to empowering patients by facilitating seamless access to care, optimizing communication channels, and providing secure access to critical health information.
+This application will transcend the functionality of a mere appointment scheduling tool, evolving into a comprehensive healthcare management platform that strengthens the patient-physician relationship and demonstrably improves health outcomes.
+We envision an intuitive interface that enables patients to efficiently identify and select healthcare providers based on specialty, location, availability, and insurance coverage.  The platform will provide real-time appointment availability and facilitate instant, confirmed bookings, eliminating the inefficiencies associated with traditional scheduling methods.  Furthermore, secure, HIPAA-compliant messaging capabilities will enable streamlined communication between patients and providers for non-urgent inquiries, appointment reminders, and post-consultation follow-up.  Patients will have the option to consolidate and securely manage their medical history, lab results, prescriptions, and other pertinent health records within the application, facilitating efficient information sharing with their physicians and promoting informed clinical decision-making.  Future development will include integration with wearable health monitoring devices, enabling the seamless transmission of physiological data to providers for personalized and proactive healthcare management.  The application's design will prioritize accessibility and inclusivity, adhering to accessibility guidelines and supporting multiple languages to ensure usability for all demographics.  By streamlining the appointment process and enhancing communication, we believe this application will significantly improve access to quality healthcare, particularly for individuals in underserved communities.  We are dedicated to continuous improvement through iterative development, incorporating user feedback and adapting to the evolving healthcare landscape to ensure the application remains a valuable and indispensable resource for both patients and providers.
+Ultimately, our objective is to create a robust and scalable platform that empowers patients to proactively manage their health, fosters a more collaborative and efficient healthcare ecosystem, and contributes to a healthier population.
           </p>
         </Card>
       </div>
@@ -61,10 +62,11 @@ const About = () => {
 
       <CardCarousel></CardCarousel>
 
-      <div>
+      <div className="py-7">
         <ContactUs></ContactUs>
       </div>
 
+      <Foot></Foot>
 
     </div>
   );
