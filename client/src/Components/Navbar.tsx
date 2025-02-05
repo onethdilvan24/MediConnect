@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export function Nav() {
   return (
-    <Navbar fluid rounded className="bg-[#DFF6FF]">
+    <Navbar fluid rounded className="bg-[#DFF6FF] shadow-md">
       <NavbarBrand href="https://flowbite-react.com">
         <img
           src="/favicon.svg"
@@ -33,7 +33,7 @@ export function Nav() {
           </Link>
         </NavbarLink>
         <NavbarLink href="#" className="text-[#06283D]">
-          <Link to="#">
+          <Link to="/Booking">
           SHOP
           </Link>
         </NavbarLink>

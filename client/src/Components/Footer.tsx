@@ -49,7 +49,7 @@ export function Foot() {
               <FooterLink href="#">+94 70 2 877 313</FooterLink>
               <FooterLink href="#">mudithmilinda@gmail.com</FooterLink>
               <FooterLink href="#">
-                No: 108, W A D Ramanayake Mawatha, <br /> Colombo 2, Sri Lanka.
+                No: 108,<br /> W A D Ramanayake Mawatha, <br /> Colombo 2, Sri Lanka.
               </FooterLink>
             </FooterLinkGroup>
           </div>
