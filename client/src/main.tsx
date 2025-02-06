@@ -10,6 +10,7 @@ import {AllDoctors} from "./Pages/AllDoctors";
 import  About  from "./Pages/About";
 import Profile from "./Pages/PationProfile";
 import BookingAppointment from "./Pages/BookAppointment";
+import MyAppointments from "./Pages/MyAppointment";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/Booking" element={<BookingAppointment />} />
+        <Route path="/MyAppointments" element={<MyAppointments />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

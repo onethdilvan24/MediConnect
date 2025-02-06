@@ -33,7 +33,7 @@ export function Nav() {
           </Link>
         </NavbarLink>
         <NavbarLink href="#" className="text-[#06283D]">
-          <Link to="/Booking">
+          <Link to="/MyAppointments">
           SHOP
           </Link>
         </NavbarLink>

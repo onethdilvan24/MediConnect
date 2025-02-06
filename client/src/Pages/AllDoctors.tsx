@@ -106,11 +106,11 @@ export function AllDoctors() {
       <hr className="mx-24 border-[#06283D]" />
 
       {/* Doctors Cards */}
-      <div className="flex justify-center pt-10">
-        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex justify-center items-center pt-10">
+        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
           {/* Crad 01 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -140,7 +140,7 @@ export function AllDoctors() {
 
           {/* Crad 02 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -170,7 +170,7 @@ export function AllDoctors() {
 
           {/* Crad 03 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -200,7 +200,7 @@ export function AllDoctors() {
 
           {/* Crad 04 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -230,7 +230,7 @@ export function AllDoctors() {
 
           {/* Crad 05 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -260,7 +260,7 @@ export function AllDoctors() {
 
           {/* Crad 06 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -290,7 +290,7 @@ export function AllDoctors() {
 
           {/* Crad 07 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -320,7 +320,7 @@ export function AllDoctors() {
 
           {/* Crad 08 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -360,11 +360,11 @@ export function AllDoctors() {
       <hr className="mx-24 border-[#06283D]" />
 
       {/* Doctors Cards */}
-      <div className="flex justify-center pt-10">
-        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex justify-center items-center pt-10">
+        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
           {/* Crad 01 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -394,7 +394,7 @@ export function AllDoctors() {
 
           {/* Crad 02 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -424,7 +424,7 @@ export function AllDoctors() {
 
           {/* Crad 03 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -454,7 +454,7 @@ export function AllDoctors() {
 
           {/* Crad 04 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -484,7 +484,7 @@ export function AllDoctors() {
 
           {/* Crad 05 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -514,7 +514,7 @@ export function AllDoctors() {
 
           {/* Crad 06 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -544,7 +544,7 @@ export function AllDoctors() {
 
           {/* Crad 07 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -574,7 +574,7 @@ export function AllDoctors() {
 
           {/* Crad 08 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -615,11 +615,11 @@ export function AllDoctors() {
       <hr className="mx-24 border-[#06283D]" />
 
       {/* Doctors Cards */}
-      <div className="flex justify-center pt-10">
-        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex justify-center items-center pt-10">
+        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
           {/* Crad 01 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -649,7 +649,7 @@ export function AllDoctors() {
 
           {/* Crad 02 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -679,7 +679,7 @@ export function AllDoctors() {
 
           {/* Crad 03 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -709,7 +709,7 @@ export function AllDoctors() {
 
           {/* Crad 04 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -739,7 +739,7 @@ export function AllDoctors() {
 
           {/* Crad 05 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -769,7 +769,7 @@ export function AllDoctors() {
 
           {/* Crad 06 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -799,7 +799,7 @@ export function AllDoctors() {
 
           {/* Crad 07 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -829,7 +829,7 @@ export function AllDoctors() {
 
           {/* Crad 08 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -869,11 +869,11 @@ export function AllDoctors() {
       <hr className="mx-24 border-[#06283D]" />
 
       {/* Doctors Cards */}
-      <div className="flex justify-center pt-10">
-        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex justify-center items-center pt-10">
+        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
           {/* Crad 01 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -903,7 +903,7 @@ export function AllDoctors() {
 
           {/* Crad 02 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -933,7 +933,7 @@ export function AllDoctors() {
 
           {/* Crad 03 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -963,7 +963,7 @@ export function AllDoctors() {
 
           {/* Crad 04 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -993,7 +993,7 @@ export function AllDoctors() {
 
           {/* Crad 05 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1023,7 +1023,7 @@ export function AllDoctors() {
 
           {/* Crad 06 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1053,7 +1053,7 @@ export function AllDoctors() {
 
           {/* Crad 07 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1083,7 +1083,7 @@ export function AllDoctors() {
 
           {/* Crad 08 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1124,11 +1124,11 @@ export function AllDoctors() {
       <hr className="mx-24 border-[#06283D]" />
 
       {/* Doctors Cards */}
-      <div className="flex justify-center pt-10 pb-24">
-        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex justify-center items-center pt-10 pb-24">
+        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
           {/* Crad 01 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1158,7 +1158,7 @@ export function AllDoctors() {
 
           {/* Crad 02 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1188,7 +1188,7 @@ export function AllDoctors() {
 
           {/* Crad 03 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1218,7 +1218,7 @@ export function AllDoctors() {
 
           {/* Crad 04 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1248,7 +1248,7 @@ export function AllDoctors() {
 
           {/* Crad 05 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1278,7 +1278,7 @@ export function AllDoctors() {
 
           {/* Crad 06 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1308,7 +1308,7 @@ export function AllDoctors() {
 
           {/* Crad 07 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
@@ -1338,7 +1338,7 @@ export function AllDoctors() {
 
           {/* Crad 08 */}
 
-          <Card className="max-w-sm">
+          <Card className="max-w-sm w-72">
             <div className="flex justify-end px-4 pt-4"></div>
             <div className="flex flex-col items-center pb-10">
               {/* <Image
