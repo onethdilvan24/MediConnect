@@ -9,7 +9,7 @@ export function Login() {
   return (
     <div>
       <Nav></Nav>
-      <div className="flex min-h-screen items-center justify-center bg-gray-100">
+      <div className="flex min-h-screen items-center justify-center">
         <Card className="w-full max-w-sm rounded-2xl bg-[#06283D] p-5">
           <form className="flex max-w-md flex-col gap-4 ">
             <div>

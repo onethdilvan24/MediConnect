@@ -8,11 +8,10 @@ import {
 } from "flowbite-react";
 import { Link } from "react-router-dom";
 
-
-
 export function Nav() {
   return (
-    <Navbar fluid rounded className="bg-[#DFF6FF] shadow-md">
+    <div className="pb-20">
+    <Navbar fluid rounded className="bg-[#DFF6FF] shadow-md fixed top-0 w-full z-50 h-16">
       <NavbarBrand href="https://flowbite-react.com">
         <img
           src="/favicon.svg"
@@ -23,34 +22,27 @@ export function Nav() {
 
       <NavbarCollapse>
         <NavbarLink href="#" className="text-[#06283D]" active>
-          <Link to="/">
-          HOME
-          </Link>
+          <Link to="/">HOME</Link>
         </NavbarLink>
         <NavbarLink href="#" className="text-[#06283D]">
-          <Link to="/alldoctors">
-          ALL DOCTORS
-          </Link>
+          <Link to="/alldoctors">ALL DOCTORS</Link>
         </NavbarLink>
         <NavbarLink href="#" className="text-[#06283D]">
-          <Link to="/MyAppointments">
-          SHOP
-          </Link>
+          <Link to="/Dashboard">SHOP</Link>
         </NavbarLink>
         <NavbarLink href="#" className="text-[#06283D]">
-          <Link to="/about">
-          ABOUT
-          </Link>
+          <Link to="/about">ABOUT</Link>
         </NavbarLink>
       </NavbarCollapse>
       <div className="flex md:order-2">
         <Link to="/login">
-        <Button className="rounded-3xl bg-[#1363DF] text-[#CFF5E7]">
-          Login
-        </Button>
+          <Button className="rounded-3xl bg-[#1363DF] text-[#CFF5E7]">
+            Login
+          </Button>
         </Link>
         <NavbarToggle />
       </div>
     </Navbar>
+    </div>
   );
 }
