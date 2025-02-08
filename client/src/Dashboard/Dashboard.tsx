@@ -5,7 +5,7 @@ const Dashboard = () => {
   const [isOpen, setIsOpen] = useState(false); // Sidebar state
 
   return (
-    <div className="flex">
+    <div className="flex pt-10">
       {/* Sidebar */}
       <NavDash isOpen={isOpen} setIsOpen={setIsOpen} />
 

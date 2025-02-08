@@ -51,6 +51,22 @@ export function CreateAccount() {
             />
           </div>
           <div>
+            <div className="mb-2 ">
+              <Label
+                htmlFor="id"
+                value="National ID"
+                className="text-[#DFF6FF]"
+              />
+            </div>
+            <TextInput
+              id="id"
+              type="email"
+              placeholder="National ID"
+              required
+              className="rounded-3xl"
+            />
+          </div>
+          <div>
             <div className="mb-2 block">
               <Label
                 htmlFor="password1"

@@ -1,10 +1,14 @@
 import { Table } from "flowbite-react";
 import { Datepicker } from "flowbite-react";
 import NavDash from "../Components/NavDash";
+import { useState } from "react";
 
-const Appointment = ({ isOpen, setIsOpen }) => {
+const Appointment = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+
   return (
-    <div className="flex min-h-screen flex-col sm:flex-row">
+    <div className="flex min-h-screen flex-col sm:flex-row pt-10">
       {/* Sidebar Navigation */}
       <NavDash isOpen={isOpen} setIsOpen={setIsOpen} />
 

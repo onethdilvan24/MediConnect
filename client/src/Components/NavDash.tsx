@@ -31,7 +31,7 @@ export default function NavDash({ isOpen, setIsOpen }) {
           <Link to="/AddDoctor" className="text-[#06283D] font-medium hover:text-blue-700">
             Add Doctor
           </Link>
-          <Link to="/doctors-list" className="text-[#06283D] font-medium hover:text-blue-700">
+          <Link to="/Doctorlist" className="text-[#06283D] font-medium hover:text-blue-700">
             Doctors List
           </Link>
         </nav>
