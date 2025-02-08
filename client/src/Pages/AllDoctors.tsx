@@ -24,12 +24,12 @@ export function AllDoctors() {
                 value="Doctor name"
                 className="mb-2 text-[#DFF6FF]"
               />
-              <Dropdown
+              <Dropdown value={""}
                 label="Select Doctor name"
                 dismissOnClick={false}
                 className=""
               >
-                <Dropdown.Item>Ramal Sasanka</Dropdown.Item>
+                <Dropdown.Item value={"Ramal Sasanka"}>Ramal Sasanka</Dropdown.Item>
                 <Dropdown.Item>Oneth Dikkumbura</Dropdown.Item>
                 <Dropdown.Item>Hirusha Nuwanpriya</Dropdown.Item>
                 <Dropdown.Item>Nimsara Pathirana</Dropdown.Item>

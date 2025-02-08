@@ -13,7 +13,8 @@ import BookingAppointment from "./Pages/BookAppointment";
 import MyAppointments from "./Pages/MyAppointment";
 import Myoder from "./Pages/MyOrders";
 import Dashboard from "./Dashboard/Dashboard";
-import {Appointment} from "./Dashboard/Appointment";
+import Appointment from "./Dashboard/Appointment";
+import AddDoctor from "./Dashboard/AddDoctor";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/Myoder" element={<Myoder />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Appointment" element={<Appointment />} />
+        <Route path="/AddDoctor" element={<AddDoctor />} />
 
 
       </Routes>
