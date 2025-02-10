@@ -1,11 +1,12 @@
 "use client";
 
-import { Card,} from "flowbite-react";
+import { Card } from "flowbite-react";
 import { Button, Label } from "flowbite-react";
 import { Datepicker } from "flowbite-react";
 import { Dropdown } from "flowbite-react";
 import { Nav } from "../Components/Navbar";
 import { Foot } from "../Components/Footer";
+import { motion } from "framer-motion";
 
 export function AllDoctors() {
   return (
@@ -14,7 +15,12 @@ export function AllDoctors() {
 
       {/* Search details Doctors */}
 
-      <div className="flex items-center justify-center px-6 py-4 pt-16">
+      <motion.div
+        className="flex items-center justify-center px-6 py-4 pt-16"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <Card className="w-full max-w-7xl rounded-xl bg-[#06283D]">
           <div className="grid grid-cols-1 gap-4 pb-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             {/* Doctor Name Dropdown */}
@@ -24,12 +30,15 @@ export function AllDoctors() {
                 value="Doctor name"
                 className="mb-2 text-[#DFF6FF]"
               />
-              <Dropdown value={""}
+              <Dropdown
+                value={""}
                 label="Select Doctor name"
                 dismissOnClick={false}
                 className=""
               >
-                <Dropdown.Item value={"Ramal Sasanka"}>Ramal Sasanka</Dropdown.Item>
+                <Dropdown.Item value={"Ramal Sasanka"}>
+                  Ramal Sasanka
+                </Dropdown.Item>
                 <Dropdown.Item>Oneth Dikkumbura</Dropdown.Item>
                 <Dropdown.Item>Hirusha Nuwanpriya</Dropdown.Item>
                 <Dropdown.Item>Nimsara Pathirana</Dropdown.Item>
@@ -96,1282 +105,1569 @@ export function AllDoctors() {
             </div>
           </div>
         </Card>
-      </div>
+      </motion.div>
 
       {/* specialization name:General Physician */}
 
-      <h1 className="flex justify-center pt-10 text-2xl font-bold">
+      <motion.h1
+        className="flex justify-center pt-10 text-2xl font-bold"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         General Physician
-      </h1>
-      <hr className="mx-24 border-[#06283D]" />
+      </motion.h1>
+
+
+      <motion.hr
+        className="mx-24 border-[#06283D]"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      />
 
       {/* Doctors Cards */}
-      <div className="flex justify-center items-center pt-10">
-        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
+
+      <div className="flex items-center justify-center pt-10">
+        <div className="grid w-full max-w-7xl grid-cols-1 place-items-center gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {/* Crad 01 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-                General Physician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  General Physician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 02 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-                General Physician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  General Physician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 03 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-                General Physician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  General Physician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 04 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-                General Physician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  General Physician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 05 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-                General Physician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  General Physician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 06 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-                General Physician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  General Physician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 07 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-                General Physician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  General Physician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 08 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-                General Physician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  General Physician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
         </div>
       </div>
-
 
       {/* Specialization:Cardiologist */}
 
+      <motion.h1
+        className="flex justify-center pt-10 text-2xl font-bold"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        Cardiologist
+      </motion.h1>
 
-      <h1 className="flex justify-center pt-20 text-2xl font-bold">
-      Cardiologist
-      </h1>
-      <hr className="mx-24 border-[#06283D]" />
+
+      <motion.hr
+        className="mx-24 border-[#06283D]"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      />
 
       {/* Doctors Cards */}
-      <div className="flex justify-center items-center pt-10">
-        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
+      <div className="flex items-center justify-center pt-10">
+        <div className="grid w-full max-w-7xl grid-cols-1 place-items-center gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {/* Crad 01 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Cardiologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Cardiologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 02 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Cardiologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Cardiologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 03 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Cardiologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Cardiologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 04 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Cardiologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Cardiologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 05 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Cardiologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Cardiologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 06 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Cardiologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Cardiologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
+
 
           {/* Crad 07 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Cardiologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Cardiologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 08 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Cardiologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Cardiologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
         </div>
       </div>
 
+      {/* Specialization: Gynecoloist */}
+
+      <motion.h1
+        className="flex justify-center pt-10 text-2xl font-bold"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        Gynecoloist
+      </motion.h1>
 
 
-
-{/* Specialization: Gynecoloist */}
-
-      <h1 className="flex justify-center pt-20 text-2xl font-bold">
-      Gynecoloist
-      </h1>
-      <hr className="mx-24 border-[#06283D]" />
+      <motion.hr
+        className="mx-24 border-[#06283D]"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      />
 
       {/* Doctors Cards */}
-      <div className="flex justify-center items-center pt-10">
-        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
+      <div className="flex items-center justify-center pt-10">
+        <div className="grid w-full max-w-7xl grid-cols-1 place-items-center gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {/* Crad 01 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Gynecoloist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Gynecoloist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 02 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Gynecoloist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Gynecoloist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 03 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Gynecoloist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Gynecoloist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 04 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Gynecoloist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Gynecoloist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 05 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Gynecoloist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Gynecoloist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 06 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Gynecoloist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Gynecoloist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 07 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Gynecoloist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Gynecoloist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 08 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Gynecoloist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Gynecoloist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
         </div>
       </div>
 
+      {/* Specialization:Pediatrician */}
 
+      <motion.h1
+        className="flex justify-center pt-10 text-2xl font-bold"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        Pediatrician
+      </motion.h1>
 
-{/* Specialization:Pediatrician */}
-
-      <h1 className="flex justify-center pt-20 text-2xl font-bold">
-      Pediatrician
-      </h1>
-      <hr className="mx-24 border-[#06283D]" />
+      <motion.hr
+        className="mx-24 border-[#06283D]"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      />
 
       {/* Doctors Cards */}
-      <div className="flex justify-center items-center pt-10">
-        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
+      <div className="flex items-center justify-center pt-10">
+        <div className="grid w-full max-w-7xl grid-cols-1 place-items-center gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {/* Crad 01 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Pediatrician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Pediatrician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 02 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Pediatrician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Pediatrician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 03 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Pediatrician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Pediatrician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 04 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Pediatrician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Pediatrician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 05 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Pediatrician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Pediatrician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 06 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Pediatrician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Pediatrician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 07 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Pediatrician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Pediatrician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 08 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Pediatrician
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Pediatrician
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
         </div>
       </div>
 
+      {/* Specialozation:Neurologist */}
 
+      <motion.h1
+        className="flex justify-center pt-10 text-2xl font-bold"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        Neurologist
+      </motion.h1>
 
-
-{/* Specialozation:Neurologist */}
-
-      <h1 className="flex justify-center pt-20 text-2xl font-bold">
-      Neurologist
-      </h1>
-      <hr className="mx-24 border-[#06283D]" />
+      <motion.hr
+        className="mx-24 border-[#06283D]"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      />
 
       {/* Doctors Cards */}
-      <div className="flex justify-center items-center pt-10 pb-24">
-        <div className="grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
+      <div className="flex items-center justify-center pb-24 pt-10">
+        <div className="grid w-full max-w-7xl grid-cols-1 place-items-center gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {/* Crad 01 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Neurologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Neurologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 02 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Neurologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Neurologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 03 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Neurologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Neurologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 04 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Neurologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Neurologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 05 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Neurologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Neurologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 06 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Neurologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Neurologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 07 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Neurologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Neurologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
 
           {/* Crad 08 */}
 
-          <Card className="max-w-sm w-72 motion-scale-in-[0.5] motion-opacity-in-[0%]">
-            <div className="flex justify-end px-4 pt-4"></div>
-            <div className="flex flex-col items-center pb-10">
-              {/* <Image
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Card className="w-72 max-w-sm">
+              <div className="flex justify-end px-4 pt-4"></div>
+              <div className="flex flex-col items-center pb-10">
+                {/* <Image
           alt="Bonnie image"
           height="96"
           src="/images/people/profile-picture-3.jpg"
           width="96"
           className="mb-3 rounded-full shadow-lg"
         /> */}
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                Bonnie Green
-              </h5>
-              <span className="text-sm text-gray-500 dark:text-gray-400">
-              Neurologist
-              </span>
-              <span className="text-[#1363DF]">Available</span>
-              <div className="mt-4 flex space-x-3 lg:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Book
-                </a>
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                  Bonnie Green
+                </h5>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  Neurologist
+                </span>
+                <span className="text-[#1363DF]">Available</span>
+                <div className="mt-4 flex space-x-3 lg:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                  >
+                    Book
+                  </a>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
         </div>
       </div>
 
-
-
-       <Foot></Foot> 
-
+      <Foot></Foot>
     </div>
   );
 }

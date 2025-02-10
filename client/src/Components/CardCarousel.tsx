@@ -1,42 +1,47 @@
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Lankahospital from "../Images/lanka-hospital.jpg"; // Import the image
+import Durdans from "../Images/Durdans.jpg"; // Import the image
+import Naweloka from "../Images/naweloka.jpeg"; // Import the image
+import Asiri from "../Images/Asiri.png"; // Import the image
+import Hemas from "../Images/hemas.png"; // Import the image
+import Apollo from "../Images/Apollo_Hospitals_Logo.jpg"; // Import the image
 
 const cards = [
   {
-    img: "/Images/",
+    img: Lankahospital, // Use imported image here
     title: "Lanka Hospital",
     description:
       "Address: No. 578, Elvitigala Mawatha, Narahenpita, Colombo 05, Sri Lanka",
   },
   {
-    img: "/images/blog/image-5.jpg",
+    img: Durdans, // Use the same image or replace it with another imported image
     title: "Durdans Hospital",
     description:
       "Address: #3 Alfred Place Colombo 03",
   },
   {
-    img: "/images/blog/image-6.jpg",
+    img: Naweloka,
     title: "Nawaloka Hospitals",
     description: "Address: Nawaloka Hospitals PLC, Colombo 2, Sri Lanka.",
   },
   {
-    img: "/images/blog/image-6.jpg",
+    img: Asiri,
     title: "Asiri Hospital",
     description: "Address: No.10 Wakwella Road, Galle 80000, Sri Lanka",
   },
   {
-    img: "/images/blog/image-6.jpg",
+    img: Hemas,
     title: "Hemas Hospitals",
-    description: "Adress: 389, Negombo Road, Wattala.",
+    description: "Address: 389, Negombo Road, Wattala.",
   },
   {
-    img: "/images/blog/image-6.jpg",
-    title: "Dr. Neville Fernando Teaching Hospital",
-    description: "Address: 406B, Church Road, Weliwita, Malabe 10115, Sri Lanka",
+    img: Apollo,
+    title: "Apollo Hospitals",
+    description: "Address: 9 R. A. De Mel Mawatha, Colombo 00400, Sri Lanka",
   },
 ];
 

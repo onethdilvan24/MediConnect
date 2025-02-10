@@ -3,6 +3,7 @@ import { Nav } from "../Components/Navbar";
 import CardCarousel from "../Components/CardCarousel";
 import { ContactUs } from "./ContactUs";
 import { Foot } from "../Components/Footer";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -11,7 +12,12 @@ const About = () => {
 
       {/* about us  */}
 
-      <div className="flex items-center justify-center pt-24">
+      <motion.div
+        className="flex items-center justify-center pt-24"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <Card className="max-w-sm" imgSrc="." horizontal>
           <h5 className="text-2xl font-bold tracking-tight text-[#06283D]">
             About Us
@@ -35,11 +41,16 @@ const About = () => {
             that simplify healthcare management for everyone.
           </p>
         </Card>
-      </div>
+      </motion.div>
 
       {/* our vision */}
 
-      <div className="flex items-center justify-center pt-20">
+      <motion.div
+        className="flex items-center justify-center pt-20"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <Card className="w-full bg-[#06283D]">
           <h5 className="flex justify-center py-6 text-3xl font-bold text-[#DFF6FF]">
             Our Vision
@@ -58,20 +69,41 @@ const About = () => {
             healthcare ecosystem.
           </p>
         </Card>
-      </div>
+      </motion.div>
 
       {/* Partnered with */}
 
-      <h1 className="flex justify-center pt-14 text-2xl font-bold">
+      <motion.h1
+        className="flex justify-center pt-14 text-2xl font-bold"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         Partnered with
-      </h1>
-      <hr className="mx-28 border-[#06283D] pb-8" />
+      </motion.h1>
+      <motion.hr
+        className="mx-28 border-[#06283D] pb-8"
+        initial={{ width: "0%" }}
+        whileInView={{ width: "100%" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      />
 
-      <CardCarousel></CardCarousel>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <CardCarousel></CardCarousel>
+      </motion.div>
 
-      <div className="py-7">
+      <motion.div
+        className="py-7"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <ContactUs></ContactUs>
-      </div>
+      </motion.div>
 
       <Foot></Foot>
     </div>

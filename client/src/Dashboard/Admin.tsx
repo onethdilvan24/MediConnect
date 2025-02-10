@@ -4,7 +4,7 @@ import { Button, Label, TextInput } from "flowbite-react";
 import { Card } from "flowbite-react";
 import { Nav } from "../Components/Navbar";
 import { Link } from "react-router-dom";
-import { FloatingLabel } from "flowbite-react";
+
 import adminImage from "../Images/01.png"; // Import the image
 
 export function Admin() {
