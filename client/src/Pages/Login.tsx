@@ -66,7 +66,7 @@ export function Login() {
               </p>
               <p className="text-xs text-[#DFF6FF]">
                 Login for Admin:
-                <Link to="#" className="text-[#47B5FF]"> Click here</Link> 
+                <Link to="/Admin" className="text-[#47B5FF]"> Click here</Link> 
               </p>
             </div>
           </form>

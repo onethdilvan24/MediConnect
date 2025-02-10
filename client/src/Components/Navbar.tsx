@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 export function Nav() {
   return (
-    <div className="pb-20">
+    <div className="pb-14">
     <Navbar fluid rounded className="bg-[#DFF6FF] shadow-md fixed top-0 w-full z-50 h-16">
       <NavbarBrand href="https://flowbite-react.com">
         <img

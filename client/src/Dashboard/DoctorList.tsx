@@ -1,6 +1,7 @@
 import { Table } from "flowbite-react";
 import NavDash from "../Components/NavDash";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Doctorlist = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,9 +56,11 @@ const Doctorlist = () => {
               {doctors.map((doctor) => (
                 <Table.Row key={doctor.id} className="bg-[#DFF6FF] dark:border-gray-700 dark:bg-gray-800">
                   <Table.Cell className="text-xs sm:text-sm">{doctor.id}</Table.Cell>
+                  
                   <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white text-xs sm:text-sm">
                     {doctor.name}
                   </Table.Cell>
+                  
                   <Table.Cell className="text-xs sm:text-sm">{doctor.hospital}</Table.Cell>
                   <Table.Cell className="text-xs sm:text-sm">{doctor.speciality}</Table.Cell>
                   <Table.Cell className="text-xs sm:text-sm">{doctor.fees}</Table.Cell>

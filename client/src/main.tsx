@@ -16,6 +16,7 @@ import Dashboard from "./Dashboard/Dashboard";
 import Appointment from "./Dashboard/Appointment";
 import AddDoctor from "./Dashboard/AddDoctor";
 import Doctorlist from "./Dashboard/DoctorList";
+import { Admin } from "./Dashboard/Admin";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -34,6 +35,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/Appointment" element={<Appointment />} />
         <Route path="/AddDoctor" element={<AddDoctor />} />
         <Route path="/Doctorlist" element={<Doctorlist />} />
+        <Route path="/Admin" element={<Admin />} />
 
 
       </Routes>
