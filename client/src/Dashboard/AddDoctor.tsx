@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
 import NavDash from "../Components/NavDash";
+import { motion } from "framer-motion";
 
 const AddDoctor = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const [doctorData, setDoctorData] = useState({
     name: "",
@@ -27,40 +28,49 @@ const AddDoctor = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col sm:flex-row pt-10">
+    <div className="flex min-h-screen flex-col pt-10 sm:flex-row">
       {/* Sidebar Navigation */}
       <NavDash isOpen={isOpen} setIsOpen={setIsOpen} />
 
       {/* Main Content Area */}
-      <div
+      <motion.div
         className={`flex-1 p-6 transition-all duration-300 ease-in-out ${isOpen ? "ml-64" : "ml-0 md:ml-64"}`}
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <div className="bg-[#DFF6FF] p-8 rounded-lg shadow-lg w-full max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6 text-[#06283D]">Add Doctor</h2>
+        <div className="mx-auto w-full max-w-4xl rounded-lg bg-[#DFF6FF] p-8 shadow-lg">
+          <h2 className="mb-6 text-2xl font-bold text-[#06283D]">Add Doctor</h2>
 
           {/* Profile Picture Upload */}
-          <div className="flex items-center space-x-4 mb-6">
-            <div className="w-20 h-20 bg-gray-300 rounded-full flex items-center justify-center">
+          <div className="mb-6 flex items-center space-x-4">
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-300">
               {doctorData.image ? (
                 <img
                   src={URL.createObjectURL(doctorData.image)}
                   alt="Doctor"
-                  className="w-full h-full object-cover rounded-full"
+                  className="h-full w-full rounded-full object-cover"
                 />
               ) : (
-                <span className="text-gray-500 text-sm pl-4">Upload picture</span>
+                <span className="pl-4 text-sm text-gray-500">
+                  Upload picture
+                </span>
               )}
             </div>
 
             {/* Custom File Upload Button */}
-            <label className="cursor-pointer bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            <label className="cursor-pointer rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700">
               Choose File
-              <input type="file" onChange={handleFileChange} className="hidden" />
+              <input
+                type="file"
+                onChange={handleFileChange}
+                className="hidden"
+              />
             </label>
           </div>
 
           {/* Form Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {/* Doctor Name */}
             <div>
               <label className="block text-gray-600">Doctor Name</label>
@@ -70,7 +80,7 @@ const AddDoctor = () => {
                 value={doctorData.name}
                 onChange={handleChange}
                 placeholder="Name"
-                className="w-full p-2 border-none rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full rounded border-none bg-white p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -81,7 +91,7 @@ const AddDoctor = () => {
                 name="speciality"
                 value={doctorData.speciality}
                 onChange={handleChange}
-                className="w-full p-2 border-none rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full rounded border-none bg-white p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Select Speciality</option>
                 <option value="Cardiologist">Cardiologist</option>
@@ -99,7 +109,7 @@ const AddDoctor = () => {
                 value={doctorData.email}
                 onChange={handleChange}
                 placeholder="Email"
-                className="w-full p-2 border-none rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full rounded border-none bg-white p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -112,7 +122,7 @@ const AddDoctor = () => {
                 value={doctorData.degree}
                 onChange={handleChange}
                 placeholder="Degree"
-                className="w-full p-2 border-none rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full rounded border-none bg-white p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -123,7 +133,7 @@ const AddDoctor = () => {
                 name="experience"
                 value={doctorData.experience}
                 onChange={handleChange}
-                className="w-full p-2 border-none rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full rounded border-none bg-white p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Select Year</option>
                 <option value="1">1 Year</option>
@@ -140,7 +150,7 @@ const AddDoctor = () => {
                 value={doctorData.address}
                 onChange={handleChange}
                 placeholder="Address"
-                className="w-full p-2 border-none rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full rounded border-none bg-white p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
 
@@ -153,7 +163,7 @@ const AddDoctor = () => {
                 value={doctorData.fees}
                 onChange={handleChange}
                 placeholder="Doctor Fee"
-                className="w-full p-2 border-none rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full rounded border-none bg-white p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -166,7 +176,7 @@ const AddDoctor = () => {
                 value={doctorData.phone}
                 onChange={handleChange}
                 placeholder="Number"
-                className="w-full p-2 border-none rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full rounded border-none bg-white p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -178,19 +188,19 @@ const AddDoctor = () => {
                 value={doctorData.about}
                 onChange={handleChange}
                 placeholder="Write about doctor"
-                className="w-full p-2 border-none rounded bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full rounded border-none bg-white p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
           </div>
 
           {/* Submit Button */}
           <div className="mt-6 flex justify-center">
-            <button className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+            <button className="rounded-lg bg-blue-600 px-6 py-2 font-semibold text-white transition hover:bg-blue-700">
               Submit
             </button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

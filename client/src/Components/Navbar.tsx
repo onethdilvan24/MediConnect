@@ -7,17 +7,16 @@ import {
   NavbarToggle,
 } from "flowbite-react";
 import { Link } from "react-router-dom";
+import Logo from "../Images/logo.png";
 
 export function Nav() {
   return (
-    <div className="pb-14">
-    <Navbar fluid rounded className="bg-[#DFF6FF] shadow-md fixed top-0 w-full z-50 h-16">
-      <NavbarBrand href="https://flowbite-react.com">
+    <div className="pb-14 overflow-hidden">
+    <Navbar fluid rounded className="bg-[#DFF6FF] shadow-md fixed top-0 w-full z-50 h-16 overflow-hidden">
+      <NavbarBrand>
         <img
-          src="/favicon.svg"
-          className="mr-3 h-6 sm:h-9"
-          alt="Flowbite React Logo"
-        />
+          src={Logo}
+          className="w-36 " />
       </NavbarBrand>
 
       <NavbarCollapse>

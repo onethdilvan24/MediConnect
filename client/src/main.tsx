@@ -17,6 +17,9 @@ import Appointment from "./Dashboard/Appointment";
 import AddDoctor from "./Dashboard/AddDoctor";
 import Doctorlist from "./Dashboard/DoctorList";
 import { Admin } from "./Dashboard/Admin";
+import { ModelChat } from "./Components/ModelChat";
+import { AnimatedTestimonialsDemo } from "./Components/AnimatedTestimonialsDemo";
+import OderMedicin from "./Pages/OderMedicin";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -36,6 +39,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/AddDoctor" element={<AddDoctor />} />
         <Route path="/Doctorlist" element={<Doctorlist />} />
         <Route path="/Admin" element={<Admin />} />
+        <Route path="/ModelChat" element={<ModelChat />} />
+        <Route path="/AnimatedTestimonialsDemo" element={<AnimatedTestimonialsDemo />} />
+        <Route path="/OrderMedicin" element={<OderMedicin />} />
 
 
       </Routes>

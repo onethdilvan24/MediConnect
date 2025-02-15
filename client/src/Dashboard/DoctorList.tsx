@@ -2,6 +2,7 @@ import { Table } from "flowbite-react";
 import NavDash from "../Components/NavDash";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Doctorlist = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,10 +26,17 @@ const Doctorlist = () => {
       <NavDash isOpen={isOpen} setIsOpen={setIsOpen} />
 
       {/* Main Content Area */}
-      <div className={`flex-1 p-6 transition-all duration-300 ease-in-out md:ml-64 ${isOpen ? "ml-64" : "ml-0 md:ml-64"}`}>
+      <motion.div
+        className={`flex-1 p-6 transition-all duration-300 ease-in-out md:ml-64 ${isOpen ? "ml-64" : "ml-0 md:ml-64"}`}
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
+      
         <h1 className="mb-6 text-xl sm:text-2xl font-bold text-[#06283D]">Doctors List</h1>
 
         {/* Search & Filter Section */}
+        
         <div className="pb-6 flex flex-wrap items-center gap-4 justify-between md:justify-start">
           {/* Search Input Field */}
           <div className="relative w-full sm:w-64">
@@ -87,7 +95,7 @@ const Doctorlist = () => {
             </Table.Body>
           </Table>
         </div>
-      </div>
+        </motion.div>
     </div>
   );
 };

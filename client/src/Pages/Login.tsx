@@ -4,12 +4,20 @@ import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 import { Card } from "flowbite-react";
 import { Nav } from "../Components/Navbar";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export function Login() {
   return (
     <div>
       <Nav></Nav>
-      <div className="flex min-h-screen items-center justify-center">
+
+      <motion.div
+        className="flex min-h-screen items-center justify-center"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+      
         <Card className="w-full max-w-sm rounded-2xl bg-[#06283D] p-5">
           <form className="flex max-w-md flex-col gap-4 ">
             <div>
@@ -71,7 +79,7 @@ export function Login() {
             </div>
           </form>
         </Card>
-      </div>
+      </motion.div>
     </div>
   );
 }

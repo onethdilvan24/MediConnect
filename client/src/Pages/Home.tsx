@@ -1,22 +1,316 @@
-
 "use client";
 
 import { Card } from "flowbite-react";
+import { Dropdown } from "flowbite-react";
+import { Button, Label } from "flowbite-react";
+import { Datepicker } from "flowbite-react";
 import { Nav } from "../Components/Navbar";
+import { motion } from "framer-motion";
+import { Carousel } from "flowbite-react";
+import { ModelChat } from "../Components/ModelChat";
+import OderMedicin from "./Pages/OderMedicin";
+import { Link } from "react-router-dom";
+
+// Image
+import license from "../Images/driven license.jpg";
+import medicin from "../Images/medicin.avif";
+import shop from "../Images/shop.webp";
+import { AnimatedTestimonialsDemo } from "../Components/AnimatedTestimonialsDemo";
+import { Foot } from "../Components/Footer";
 
 export function Home() {
   return (
     <div>
-        <Nav></Nav>
-    <Card href="#" className="max-w-sm">
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
-      </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-      </p>
-    </Card>
+      <Nav></Nav>
+
+      <h2 className="flex justify-center pt-6 text-sm ">
+        The Best Health Solution
+      </h2>
+
+      <h2 className="flex flex-col items-center pb-2 pt-1 text-center text-4xl font-bold">
+        <span className="whitespace-nowrap">
+          Optimal <span className="text-blue-600">Health</span>,
+        </span>
+        <span className="whitespace-nowrap">One Click Away</span>
+      </h2>
+
+      <div className="flex items-center justify-center">
+        <div className="h-56 w-2/3 sm:h-64 xl:h-80 2xl:h-96">
+          <Carousel>
+            <img
+              src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+              alt="..."
+            />
+            <img
+              src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+              alt="..."
+            />
+            <img
+              src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+              alt="..."
+            />
+            <img
+              src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
+              alt="..."
+            />
+            <img
+              src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
+              alt="..."
+            />
+          </Carousel>
+        </div>
+      </div>
+
+      <motion.div
+        className="flex items-center justify-center px-6 py-4 pt-8"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <Card className="w-full max-w-7xl rounded-3xl bg-[#06283D]">
+          <div className="flex items-center justify-center pb-3 text-2xl font-bold text-[#DFF6FF]">
+            <span className="whitespace-nowrap">
+              Search <span className="text-[#47B5FF]">Doctors</span>...
+            </span>
+          </div>
+          <div className="grid grid-cols-1 gap-4 pb-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            {/* Doctor Name Dropdown */}
+            <div className="flex flex-col">
+              <Label
+                htmlFor="name"
+                value="Doctor name"
+                className="mb-2 text-[#DFF6FF]"
+              />
+              <Dropdown
+                value={""}
+                label="Select Doctor name"
+                dismissOnClick={false}
+                className=""
+              >
+                <Dropdown.Item value={"Ramal Sasanka"}>
+                  Ramal Sasanka
+                </Dropdown.Item>
+                <Dropdown.Item>Oneth Dikkumbura</Dropdown.Item>
+                <Dropdown.Item>Hirusha Nuwanpriya</Dropdown.Item>
+                <Dropdown.Item>Nimsara Pathirana</Dropdown.Item>
+              </Dropdown>
+            </div>
+
+            {/* Specialization Dropdown */}
+            <div className="flex flex-col">
+              <Label
+                htmlFor="specialization"
+                value="Specialization"
+                className="mb-2 text-[#DFF6FF]"
+              />
+              <Dropdown
+                label="Select specialization"
+                dismissOnClick={false}
+                className=""
+              >
+                <Dropdown.Item>General Physician</Dropdown.Item>
+                <Dropdown.Item>Cardiologist</Dropdown.Item>
+                <Dropdown.Item>Gynecologist</Dropdown.Item>
+                <Dropdown.Item>Pediatrician</Dropdown.Item>
+                <Dropdown.Item>Neurologist</Dropdown.Item>
+              </Dropdown>
+            </div>
+
+            {/* Hospital Dropdown */}
+            <div className="flex flex-col">
+              <Label
+                htmlFor="hospital"
+                value="Hospital"
+                className="mb-2 text-[#DFF6FF]"
+              />
+              <Dropdown
+                label="Select Hospital"
+                dismissOnClick={false}
+                className=""
+              >
+                <Dropdown.Item>Lanka Hospital</Dropdown.Item>
+                <Dropdown.Item>Nawaloka Medical Center</Dropdown.Item>
+                <Dropdown.Item>Durdans Hospital</Dropdown.Item>
+                <Dropdown.Item>Asiri Hospital</Dropdown.Item>
+              </Dropdown>
+            </div>
+
+            {/* Date Picker */}
+            <div className="flex flex-col">
+              <Label
+                htmlFor="date"
+                value="Date"
+                className="mb-2 text-[#DFF6FF]"
+              />
+              <Datepicker className="w-full" />
+            </div>
+
+            {/* Search Button */}
+            <div className="flex items-end justify-center">
+              <Button
+                type="submit"
+                className="w-full rounded-3xl border-none bg-[#1363DF] sm:w-32"
+              >
+                Search
+              </Button>
+            </div>
+          </div>
+        </Card>
+      </motion.div>
+
+      {/* bot card */}
+
+      <div className="flex items-center justify-center py-14">
+        <Card className="max-w-sm bg-[#DFF6FF]">
+          <h5 className="text-2xl font-bold tracking-tight text-[#06283D] dark:text-white">
+            Noteworthy technology acquisitions 2021
+          </h5>
+          <p className="font-normal text-[#06283D] dark:text-gray-400">
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.
+          </p>
+          <ModelChat></ModelChat>
+        </Card>
+      </div>
+
+      {/* Get appointment for */}
+
+      <div className="bg-[#06283D] py-12">
+        <h1 className="pb-12 text-center text-3xl font-bold text-[#DFF6FF]">
+          Get Appointment For
+        </h1>
+
+        <div className="flex items-center justify-center ">
+          <div className="mx-auto grid w-full max-w-7xl grid-cols-1 place-items-center gap-6 sm:grid-cols-2 md:grid-cols-3 ">
+            {/* Card 1 */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <Card className="h-96 w-72 max-w-sm bg-[#DFF6FF]">
+                <div className="flex justify-end px-4 pt-4"></div>
+                <div className="flex flex-col items-center pb-10">
+                  <img
+                    src={license}
+                    alt="Doctor"
+                    className="h-auto w-28 rounded-full shadow-lg"
+                  />
+
+                  <h5 className="mb-1 text-lg font-medium text-gray-900 dark:text-white">
+                    Driving License Medical
+                  </h5>
+                  <span className="text-center text-sm text-[#1363DF]">
+                    Book your driving license medical assessment easily with
+                    Convenient, secure, and accessible nationwide.
+                  </span>
+                  
+                    <div className="mt-4 flex space-x-3 lg:mt-6">
+                      <a
+                        href="https://dmtappointments.dmt.gov.lk/"
+                        className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                      >
+                        Book
+                      </a>
+                    </div>
+                 
+                </div>
+              </Card>
+            </motion.div>
+
+            {/* Card 2 */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <Card className="h-96 w-72 max-w-sm bg-[#DFF6FF]">
+                <div className="flex justify-end px-4 pt-4"></div>
+                <div className="flex flex-col items-center pb-10">
+                  <img
+                    src={medicin}
+                    alt="Doctor"
+                    className="h-auto w-28 rounded-full shadow-lg"
+                  />
+
+                  <h5 className="mb-1 text-lg font-medium text-gray-900 dark:text-white">
+                    Order Medicine
+                  </h5>
+                  <span className="text-center text-sm text-[#1363DF]">
+                    Select your preferred pharmacy, order your prescription
+                    medicine online and have it delivered straight to your home.
+                  </span>
+                  <Link to="/OrderMedicin">
+                    <div className="mt-4 flex space-x-3 lg:mt-6">
+                      <a
+                        href="#"
+                        className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                      >
+                        Book
+                      </a>
+                    </div>
+                  </Link>
+                </div>
+              </Card>
+            </motion.div>
+
+            {/* Card 3 */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <Card className="h-96 w-72 max-w-sm bg-[#DFF6FF]">
+                <div className="flex justify-end px-4 pt-4"></div>
+                <div className="flex flex-col items-center pb-10">
+                  <img
+                    src={shop}
+                    alt="Doctor"
+                    className="h-auto w-28 rounded-full shadow-lg"
+                  />
+
+                  <h5 className="mb-1 text-lg font-medium text-gray-900 dark:text-white">
+                    Medical Equipment
+                  </h5>
+                  <span className="text-center text-sm text-[#1363DF]">
+                    Select your preferred pharmacy, order your prescription
+                    medicine online and have it delivered straight to your home.
+                  </span>
+                  <div className="mt-4 flex space-x-3 lg:mt-6">
+                    <a
+                      href="#"
+                      className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                    >
+                      Book
+                    </a>
+                  </div>
+                </div>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
+      <motion.h1
+        className="flex justify-center pt-20 text-3xl font-bold"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        Blogs
+      </motion.h1>
+
+      <motion.hr
+        className="mx-24 border-[#06283D]"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      />
+
+      <div>
+        <AnimatedTestimonialsDemo></AnimatedTestimonialsDemo>
+      </div>
+      <Foot></Foot>
     </div>
   );
 }
-

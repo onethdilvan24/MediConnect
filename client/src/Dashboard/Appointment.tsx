@@ -2,6 +2,7 @@ import { Table } from "flowbite-react";
 import { Datepicker } from "flowbite-react";
 import NavDash from "../Components/NavDash";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Appointment = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +14,13 @@ const Appointment = () => {
       <NavDash isOpen={isOpen} setIsOpen={setIsOpen} />
 
       {/* Main Content Area */}
-      <div
+      <motion.div
         className={`flex-1 p-6 transition-all duration-300 ease-in-out md:ml-64 ${isOpen ? "ml-64" : "ml-0 md:ml-64"}`}
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
+      
         <h1 className="mb-6 text-xl sm:text-2xl font-bold text-[#06283D]">Appointments</h1>
 
         {/* Search & Filter Section */}
@@ -73,7 +78,7 @@ const Appointment = () => {
             </Table.Body>
           </Table>
         </div>
-      </div>
+        </motion.div>
     </div>
   );
 };

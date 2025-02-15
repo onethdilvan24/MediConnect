@@ -4,6 +4,7 @@ import { Button, Label, TextInput } from "flowbite-react";
 import { Card } from "flowbite-react";
 import { Nav } from "../Components/Navbar";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import adminImage from "../Images/01.png"; // Import the image
 
@@ -11,7 +12,15 @@ export function Admin() {
   return (
     <div>
       <Nav />
-      <div className="flex min-h-screen items-center justify-center">
+
+      
+      <motion.div
+        className="flex min-h-screen items-center justify-center"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+      
         <Card
           imgSrc={adminImage}
           className="w-auto bg-[#06283D] object-cover"
@@ -62,7 +71,7 @@ export function Admin() {
             </div>
           </form>
         </Card>
-      </div>
+      </motion.div>
     </div>
   );
 }

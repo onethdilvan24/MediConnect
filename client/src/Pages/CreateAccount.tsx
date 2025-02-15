@@ -6,6 +6,7 @@ import { Card } from "flowbite-react";
 import { Nav } from "../Components/Navbar";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { motion } from "framer-motion";
 
 const handleSubmit = (e:React.FormEvent) => {
   e.preventDefault();
@@ -24,7 +25,15 @@ export function CreateAccount() {
   return (
     <div>
       <Nav></Nav>
-      <div className="flex min-h-screen items-center justify-center ">
+
+
+      <motion.div
+        className="flex min-h-screen items-center justify-center"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+      
         <Card className="w-full max-w-sm rounded-2xl bg-[#06283D] p-5">
           <form
             className="flex max-w-md flex-col gap-4 "
@@ -127,16 +136,10 @@ export function CreateAccount() {
                   <Link to="/login">Click here</Link>
                 </a>{" "}
               </p>
-              <p className="text-xs text-[#DFF6FF]">
-                Login for Admin:{" "}
-                <a href="#" className="text-[#47B5FF]">
-                  Click here
-                </a>{" "}
-              </p>
             </div>
           </form>
         </Card>
-      </div>
+      </motion.div>
     </div>
   );
 }

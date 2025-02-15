@@ -8,6 +8,7 @@ import {
   FooterLinkGroup,
 } from "flowbite-react";
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import Logo from "../Images/logo.png";
 
 export function Foot() {
   return (
@@ -16,9 +17,11 @@ export function Foot() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 text-center sm:text-left">
           {/* Logo Section */}
-          <div className="flex justify-center sm:justify-start">
+          <div className="flex justify-center items-center sm:justify-start">
             <div className="pb-6">
-              <p>MeciConnect</p>
+            <img src={Logo} className="w-36 mx-auto sm:mx-0" />
+
+              <p className="text-xs">The Best Health Solution</p>
             <iframe
                 className="mt-4 h-40 w-full rounded-md"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12674.309030315074!2d80.04545!3d6.8213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2466b63e1e34b%3A0xd2d5d5ef8b33d6df!2sNSBM%20Green%20University!5e0!3m2!1sen!2slk!4v1707089302932!5m2!1sen!2slk"
