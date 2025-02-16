@@ -5,6 +5,8 @@ import { ContactUs } from "./ContactUs";
 import { Foot } from "../Components/Footer";
 import { motion } from "framer-motion";
 
+import medicin from "../Images/medicin.avif";
+
 const About = () => {
   return (
     <div>
@@ -18,7 +20,8 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <Card className="max-w-sm" imgSrc="." horizontal>
+        <Card className="max-w-sm" imgSrc={medicin} horizontal>
+          
           <h5 className="text-2xl font-bold tracking-tight text-[#06283D]">
             About Us
           </h5>
@@ -104,6 +107,8 @@ const About = () => {
       >
         <ContactUs></ContactUs>
       </motion.div>
+
+      
 
       <Foot></Foot>
     </div>

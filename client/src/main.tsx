@@ -21,6 +21,7 @@ import { ModelChat } from "./Components/ModelChat";
 import { AnimatedTestimonialsDemo } from "./Components/AnimatedTestimonialsDemo";
 import OderMedicin from "./Pages/OderMedicin";
 
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -42,6 +43,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/ModelChat" element={<ModelChat />} />
         <Route path="/AnimatedTestimonialsDemo" element={<AnimatedTestimonialsDemo />} />
         <Route path="/OrderMedicin" element={<OderMedicin />} />
+        
 
 
       </Routes>

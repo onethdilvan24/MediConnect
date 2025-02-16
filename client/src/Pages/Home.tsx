@@ -8,15 +8,16 @@ import { Nav } from "../Components/Navbar";
 import { motion } from "framer-motion";
 import { Carousel } from "flowbite-react";
 import { ModelChat } from "../Components/ModelChat";
-import OderMedicin from "./Pages/OderMedicin";
 import { Link } from "react-router-dom";
+import { AnimatedTestimonialsDemo } from "../Components/AnimatedTestimonialsDemo";
+import { Foot } from "../Components/Footer";
 
 // Image
 import license from "../Images/driven license.jpg";
 import medicin from "../Images/medicin.avif";
 import shop from "../Images/shop.webp";
-import { AnimatedTestimonialsDemo } from "../Components/AnimatedTestimonialsDemo";
-import { Foot } from "../Components/Footer";
+import bot from "../Images/bot.png";
+
 
 export function Home() {
   return (
@@ -161,17 +162,23 @@ export function Home() {
       {/* bot card */}
 
       <div className="flex items-center justify-center py-14">
-        <Card className="max-w-sm bg-[#DFF6FF]">
-          <h5 className="text-2xl font-bold tracking-tight text-[#06283D] dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-          <p className="font-normal text-[#06283D] dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-          <ModelChat></ModelChat>
-        </Card>
+  <Card className="max-w-sm bg-[#DFF6FF] p-4">
+    <div className="flex items-center gap-4">
+      <div className="flex-1">
+        <h5 className="text-2xl font-bold tracking-tight text-[#06283D] dark:text-white">
+          Noteworthy technology acquisitions 2021
+        </h5>
+        <p className="font-normal text-[#06283D] dark:text-gray-400">
+          Here are the biggest enterprise technology acquisitions of 2021 so
+          far, in reverse chronological order.
+        </p>
+        <ModelChat />
       </div>
+      <img src={bot} className=" sm:w-16 md:w-24 lg:w-30 " alt="Bot" />
+    </div>
+  </Card>
+</div>
+
 
       {/* Get appointment for */}
 

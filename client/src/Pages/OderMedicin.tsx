@@ -32,9 +32,9 @@ export default function OrderMedicine() {
     <div>
       <Nav />
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="flex w-2/3 flex-col md:flex-row rounded-xl items-center justify-center bg-gradient-to-r from-blue-400 to-blue-300 p-6 ">
+        <div className="flex w-2/3 flex-col md:flex-row rounded-xl items-center justify-center bg-[#06283D] p-6 ">
           {/* Left Side */}
-          <div className="md:w-1/3 text-white p-6">
+          <div className="md:w-1/3 text-[#DFF6FF] p-6">
             <h1 className="text-3xl font-bold">Upload your prescription</h1>
             <p className="mt-2 text-lg">
               e-Channeling is the most trustworthy & reliable online pharmacy in Sri Lanka.
@@ -43,7 +43,7 @@ export default function OrderMedicine() {
             <div className="mt-6 space-y-4">
               {["Enter patient details", "Select a pharmacy after selecting the living area", "Get an image of a prescription and upload"].map((text, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <div className="w-8 h-8 flex items-center justify-center bg-green-500 text-white font-bold rounded-full">{index + 1}</div>
+                  <div className="w-8 h-8 flex items-center justify-center bg-green-500 text-[#DFF6FF] font-bold rounded-full">{index + 1}</div>
                   <p>{text}</p>
                 </div>
               ))}
@@ -51,7 +51,7 @@ export default function OrderMedicine() {
           </div>
 
           {/* Right Side - Modified Card */}
-          <div className="md:w-2/4 min-h-[500px] bg-white p-10 rounded-3xl shadow-lg">
+          <div className="md:w-2/4 min-h-[500px] bg-[#DFF6FF] p-10 rounded-3xl shadow-lg">
             <h2 className="text-xl font-semibold text-gray-800">Upload your prescription</h2>
 
             <form onSubmit={handleSubmit} className="mt-4 space-y-4">
@@ -59,13 +59,13 @@ export default function OrderMedicine() {
                 <input
                   type="text"
                   placeholder="Enter patient name"
-                  className="border p-3 rounded-lg w-full focus:ring-2 focus:ring-blue-500"
+                  className="border p-3 rounded-lg w-full bg-[#DFF6FF] focus:ring-1 focus:ring-blue-500"
                   required
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
                 <div>
                   <select
-                    className="border p-3 rounded-lg w-full focus:ring-2 focus:ring-blue-500"
+                    className="border p-3 rounded-lg w-full bg-[#DFF6FF] focus:ring-1 focus:ring-blue-500"
                     required
                     onChange={(e) => setFormData({ ...formData, area: e.target.value })}
                   >
@@ -79,7 +79,7 @@ export default function OrderMedicine() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <select
-                  className="border p-3 rounded-lg w-full focus:ring-2 focus:ring-blue-500"
+                  className="border p-3 rounded-lg w-full bg-[#DFF6FF] focus:ring-1 focus:ring-blue-500"
                   required
                   onChange={(e) => setFormData({ ...formData, pharmacy: e.target.value })}
                 >
@@ -91,7 +91,7 @@ export default function OrderMedicine() {
                 <input
                   type="text"
                   placeholder="+94 7XXXXXXXX"
-                  className="border p-3 rounded-lg w-full focus:ring-2 focus:ring-blue-500"
+                  className="border p-3 rounded-lg w-full bg-[#DFF6FF] focus:ring-1 focus:ring-blue-500"
                   required
                   onChange={(e) => setFormData({ ...formData, number: e.target.value })}
                 />
