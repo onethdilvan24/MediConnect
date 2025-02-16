@@ -18,7 +18,6 @@ import medicin from "../Images/medicin.avif";
 import shop from "../Images/shop.webp";
 import bot from "../Images/bot.png";
 
-
 export function Home() {
   return (
     <div>
@@ -162,23 +161,21 @@ export function Home() {
       {/* bot card */}
 
       <div className="flex items-center justify-center py-14">
-  <Card className="max-w-sm bg-[#DFF6FF] p-4">
-    <div className="flex items-center gap-4">
-      <div className="flex-1">
-        <h5 className="text-2xl font-bold tracking-tight text-[#06283D] dark:text-white">
-          Noteworthy technology acquisitions 2021
-        </h5>
-        <p className="font-normal text-[#06283D] dark:text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
-        </p>
-        <ModelChat />
+        <Card className=" bg-[#DFF6FF] p-4 w-3/5">
+          <div className="flex items-center gap-4">
+            <div className="flex-1">
+              <h5 className="text-2xl font-bold tracking-tight text-[#06283D] dark:text-white mb-6">
+              Mediconnect Assist
+              </h5>
+              <p className="font-normal text-[#06283D] dark:text-gray-400 mb-5">
+              I can help review your recent medical history and answer questions about your health records from the past year.
+              </p>
+              <ModelChat />
+            </div>
+            <img src={bot} className=" w-30 " alt="Bot" />
+          </div>
+        </Card>
       </div>
-      <img src={bot} className=" sm:w-16 md:w-24 lg:w-30 " alt="Bot" />
-    </div>
-  </Card>
-</div>
-
 
       {/* Get appointment for */}
 
@@ -211,16 +208,15 @@ export function Home() {
                     Book your driving license medical assessment easily with
                     Convenient, secure, and accessible nationwide.
                   </span>
-                  
-                    <div className="mt-4 flex space-x-3 lg:mt-6">
-                      <a
-                        href="https://dmtappointments.dmt.gov.lk/"
-                        className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                      >
-                        Book
-                      </a>
-                    </div>
-                 
+
+                  <div className="mt-4 flex space-x-3 lg:mt-6">
+                    <a
+                      href="https://dmtappointments.dmt.gov.lk/"
+                      className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                    >
+                      Book
+                    </a>
+                  </div>
                 </div>
               </Card>
             </motion.div>

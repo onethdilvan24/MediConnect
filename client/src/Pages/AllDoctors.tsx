@@ -9,6 +9,12 @@ import { Foot } from "../Components/Footer";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+
+// image
+import Doctor from "../Images/Doctor.png";
+
+
+
 export function AllDoctors() {
   return (
     <div>
@@ -141,13 +147,12 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
+
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -179,13 +184,12 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
+
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -217,13 +221,12 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+                <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
+
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -255,13 +258,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+                <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -293,13 +294,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -331,13 +330,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -369,13 +366,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -407,13 +402,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -469,13 +462,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -507,13 +498,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -545,13 +534,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -583,13 +570,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -621,13 +606,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -659,13 +642,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -698,13 +679,12 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
+
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -736,13 +716,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+                <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -798,13 +776,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -836,13 +812,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -874,13 +848,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -912,13 +884,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -950,13 +920,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -988,13 +956,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1026,13 +992,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1064,13 +1028,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1125,13 +1087,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1163,13 +1123,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1201,13 +1159,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1239,13 +1195,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1277,13 +1231,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1315,13 +1267,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1353,13 +1303,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1391,13 +1339,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1452,13 +1398,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1490,13 +1434,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1528,13 +1470,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1566,13 +1506,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1604,13 +1542,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1642,13 +1578,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1680,13 +1614,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
@@ -1718,13 +1650,11 @@ export function AllDoctors() {
             <Card className="w-72 max-w-sm">
               <div className="flex justify-end px-4 pt-4"></div>
               <div className="flex flex-col items-center pb-10">
-                {/* <Image
-          alt="Bonnie image"
-          height="96"
-          src="/images/people/profile-picture-3.jpg"
-          width="96"
-          className="mb-3 rounded-full shadow-lg"
-        /> */}
+              <img
+                    src={Doctor}
+                    alt="Doctor"
+                    className="h-auto w-20 rounded-full shadow-lg"
+                  />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   Bonnie Green
                 </h5>
