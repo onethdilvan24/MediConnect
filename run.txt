@@ -1,1 +1,4 @@
 flask --app hello run
+
+-Continous Running-
+flask --app hello run --debug
