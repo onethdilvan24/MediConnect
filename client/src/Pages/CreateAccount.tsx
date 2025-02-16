@@ -13,7 +13,6 @@ export function CreateAccount() {
   
   return (
     <div>
-      <Nav></Nav>
 
 
       <motion.div
