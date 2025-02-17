@@ -6,8 +6,6 @@ import { Button, Label } from "flowbite-react";
 import { Datepicker } from "flowbite-react";
 import { Nav } from "../Components/Navbar";
 import { motion } from "framer-motion";
-import { Carousel } from "flowbite-react";
-import { ModelChat } from "../Components/ModelChat";
 import { Link } from "react-router-dom";
 import { AnimatedTestimonialsDemo } from "../Components/AnimatedTestimonialsDemo";
 import { Foot } from "../Components/Footer";
@@ -16,10 +14,11 @@ import { Foot } from "../Components/Footer";
 import license from "../Images/driven license.jpg";
 import medicin from "../Images/medicin.avif";
 import shop from "../Images/shop.webp";
-import bot from "../Images/bot.png";
 import home_1 from "../Images/home-1.png";
 import home_2 from "../Images/home-2.png";
 import left from "../Images/home-3.png";
+import { BotCard } from "../Components/BotCard";
+import SpecialitySection from "../Components/SpecialitySection";
 
 export function Home() {
   return (
@@ -54,7 +53,7 @@ export function Home() {
               </h2>
 
               <a
-                href="#"
+                href="/alldoctors"
                 className="rounded border border-[#06283D] bg-transparent px-4 py-2 text-[#06283D] shadow hover:border-transparent hover:bg-[#DFF6FF] hover:text-black hover:shadow-lg"
               >
                 Booking Appointment
@@ -66,7 +65,7 @@ export function Home() {
               <div className="flex h-48 flex-wrap content-center justify-center">
                 <div>
                   <img
-                    className="mt-28 inline-block hidden w-48 xl:block"
+                    className="mt-28 inline-block hidden w-56 xl:block"
                     src={left}
                     alt="TechFest Image 1"
                   />
@@ -80,7 +79,7 @@ export function Home() {
                 </div>
                 <div>
                   <img
-                    className="inline-block hidden w-48 lg:block"
+                    className="inline-block hidden w-52 lg:block"
                     src={home_2}
                     alt="TechFest Image 3"
                   />
@@ -196,24 +195,28 @@ export function Home() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="flex items-center justify-center py-14">
-          <Card className=" w-3/5 bg-[#DFF6FF] p-4">
-            <div className="flex items-center gap-4">
-              <div className="flex-1">
-                <h5 className="mb-6 text-3xl font-bold italic tracking-tight text-[#06283D] dark:text-white">
-                  Mediconnect Assist
-                </h5>
-                <p className="mb-5 font-normal text-[#06283D] dark:text-gray-400">
-                  I can help review your recent medical history and answer
-                  questions about your health records from the past year.
-                </p>
-                <ModelChat />
-              </div>
-              <img src={bot} className=" w-30 " alt="Bot" />
-            </div>
-          </Card>
+        <div className="py-10">
+        <BotCard></BotCard>
         </div>
       </motion.div>
+
+
+
+      {/* SpecialitySection */}
+      <motion.div
+      className="flex justify-center items-center pb-24"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+      
+  <div className="w-3/5">
+    <Card className="bg-[#DFF6FF]">
+      <SpecialitySection />
+    </Card>
+  </div>
+</motion.div>
+
 
       {/* Get appointment for */}
 

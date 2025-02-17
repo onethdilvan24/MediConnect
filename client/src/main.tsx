@@ -23,6 +23,8 @@ import OderMedicin from "./Pages/OderMedicin";
 import { Shop } from "./Pages/Shop";
 import { Shopcards } from "./Components/ShopCards";
 import { MedicalEquipment } from "./Pages/MedicalEquipment";
+import { BotCard } from "./Components/BotCard";
+import SpecialitySection from "./Components/SpecialitySection";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -49,6 +51,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/Shop" element={<Shop/>} />
         <Route path="/Shopcards" element={<Shopcards/>} />
         <Route path="/MedicalEquipment" element={<MedicalEquipment/>} />
+        <Route path="/BotCard" element={<BotCard/>} />\
+        <Route path="/SpecialitySection" element={<SpecialitySection/>} />
+
 
 
       </Routes>
