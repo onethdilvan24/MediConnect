@@ -20,6 +20,9 @@ import { Admin } from "./Dashboard/Admin";
 import { ModelChat } from "./Components/ModelChat";
 import { AnimatedTestimonialsDemo } from "./Components/AnimatedTestimonialsDemo";
 import OderMedicin from "./Pages/OderMedicin";
+import { Shop } from "./Pages/Shop";
+import { Shopcards } from "./Components/ShopCards";
+import { MedicalEquipment } from "./Pages/MedicalEquipment";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -43,7 +46,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/ModelChat" element={<ModelChat />} />
         <Route path="/AnimatedTestimonialsDemo" element={<AnimatedTestimonialsDemo />} />
         <Route path="/OrderMedicin" element={<OderMedicin />} />
-        
+        <Route path="/Shop" element={<Shop/>} />
+        <Route path="/Shopcards" element={<Shopcards/>} />
+        <Route path="/MedicalEquipment" element={<MedicalEquipment/>} />
 
 
       </Routes>

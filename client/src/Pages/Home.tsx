@@ -17,49 +17,81 @@ import license from "../Images/driven license.jpg";
 import medicin from "../Images/medicin.avif";
 import shop from "../Images/shop.webp";
 import bot from "../Images/bot.png";
+import home_1 from "../Images/home-1.png";
+import home_2 from "../Images/home-2.png";
+import left from "../Images/home-3.png";
 
 export function Home() {
   return (
     <div>
       <Nav></Nav>
 
-      <h2 className="flex justify-center pt-6 text-sm ">
-        The Best Health Solution
-      </h2>
+      <motion.div
+        className="flex items-center justify-center px-6 py-4 pt-8"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
 
-      <h2 className="flex flex-col items-center pb-2 pt-1 text-center text-4xl font-bold">
-        <span className="whitespace-nowrap">
-          Optimal <span className="text-blue-600">Health</span>,
-        </span>
-        <span className="whitespace-nowrap">One Click Away</span>
-      </h2>
+      <section className="flex w-full items-center bg-[] justify-center pb-8">
+        <div className="mx-auto w-full max-w-6xl py-24 text-[#06283D]">
+          <div className="container mx-auto my-12 flex flex-col items-center md:my-24 md:flex-row">
+            {/* Left Section */}
+            <div className="flex w-full flex-col items-start justify-center p-8 lg:w-1/3">
+              <h1 className="tracking-loose text-3xl font-black text-[#1363DF] md:text-4xl">
+                MEDI<span className="text-[#58bcd0]">CONNECT</span>
+              </h1>
 
-      <div className="flex items-center justify-center">
-        <div className="h-56 w-2/3 sm:h-64 xl:h-80 2xl:h-96">
-          <Carousel>
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-              alt="..."
-            />
-          </Carousel>
+              <p className="mb-4 text-xs text-[#06283D] italic font-medium md:text-base">
+                The Best Health Solution...
+              </p>
+
+              <h2 className="flex flex-col items-center pb-2 pt-1 text-center text-3xl font-bold">
+                <span className="whitespace-nowrap">
+                  Optimal <span className="text-blue-600">Health</span>,
+                </span>
+                <span className="whitespace-nowrap">One Click Away</span>
+              </h2>
+
+              <a
+                href="#"
+                className="rounded border border-[#06283D] bg-transparent px-4 py-2 text-[#06283D] shadow hover:border-transparent hover:bg-[#DFF6FF] hover:text-black hover:shadow-lg"
+              >
+                Booking Appointment
+              </a>
+            </div>
+
+            {/* Right Section */}
+            <div className="mb-6 ml-0 mt-12 flex justify-center p-8 md:mb-0 md:ml-12 md:mt-0 lg:w-2/3">
+              <div className="flex h-48 flex-wrap content-center justify-center">
+                <div>
+                  <img
+                    className="mt-28 inline-block hidden w-48 xl:block"
+                    src={left}
+                    alt="TechFest Image 1"
+                  />
+                </div>
+                <div>
+                  <img
+                    className="mt-24 inline-block w-80 p-8 md:mt-0 md:p-0"
+                    src={home_1}
+                    alt="TechFest Image 2"
+                  />
+                </div>
+                <div>
+                  <img
+                    className="inline-block hidden w-48 lg:block"
+                    src={home_2}
+                    alt="TechFest Image 3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+</motion.div>
+      
 
       <motion.div
         className="flex items-center justify-center px-6 py-4 pt-8"
@@ -159,23 +191,29 @@ export function Home() {
       </motion.div>
 
       {/* bot card */}
-
-      <div className="flex items-center justify-center py-14">
-        <Card className=" bg-[#DFF6FF] p-4 w-3/5">
-          <div className="flex items-center gap-4">
-            <div className="flex-1">
-              <h5 className="text-2xl font-bold tracking-tight text-[#06283D] dark:text-white mb-6">
-              Mediconnect Assist
-              </h5>
-              <p className="font-normal text-[#06283D] dark:text-gray-400 mb-5">
-              I can help review your recent medical history and answer questions about your health records from the past year.
-              </p>
-              <ModelChat />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="flex items-center justify-center py-14">
+          <Card className=" w-3/5 bg-[#DFF6FF] p-4">
+            <div className="flex items-center gap-4">
+              <div className="flex-1">
+                <h5 className="mb-6 text-3xl font-bold italic tracking-tight text-[#06283D] dark:text-white">
+                  Mediconnect Assist
+                </h5>
+                <p className="mb-5 font-normal text-[#06283D] dark:text-gray-400">
+                  I can help review your recent medical history and answer
+                  questions about your health records from the past year.
+                </p>
+                <ModelChat />
+              </div>
+              <img src={bot} className=" w-30 " alt="Bot" />
             </div>
-            <img src={bot} className=" w-30 " alt="Bot" />
-          </div>
-        </Card>
-      </div>
+          </Card>
+        </div>
+      </motion.div>
 
       {/* Get appointment for */}
 
