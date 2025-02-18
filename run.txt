@@ -2,3 +2,6 @@ flask --app hello run
 
 -Continous Running-
 flask --app hello run --debug
+
+-run all
+py -m flask run --debug

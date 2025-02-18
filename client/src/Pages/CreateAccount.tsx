@@ -3,11 +3,13 @@ import { Button, Label, TextInput } from "flowbite-react";
 import { Card } from "flowbite-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import axios, { AxiosError } from "axios";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
+const navigate = useNavigate();
+navigate("/createaccount");
 
-
-const RegisterForm = () => {
+export default function CreateAccount() {
   const [formData, setFormData] = useState({
     full_name: "",
     email: "",
@@ -47,7 +49,7 @@ const RegisterForm = () => {
               Create Account
             </h1>
             <p className="text-xs text-[#DFF6FF]">
-              Please sign up to book appointment
+              Please sign up to book an appointment
             </p>
           </div>
           <div>
@@ -134,6 +136,4 @@ const RegisterForm = () => {
       </Card>
     </motion.div>
   );
-};
-
-export default RegisterForm;
+}

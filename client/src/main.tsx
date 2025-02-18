@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 
 import { Login } from "./Pages/Login";
-import { CreateAccount } from "./Pages/CreateAccount";
+import CreateAccount from "./Pages/CreateAccount";
 import { Home } from "./Pages/Home";
 import AllDoctors from "./Pages/AllDoctors";
 import  About  from "./Pages/About";
@@ -32,7 +32,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />       
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/createaccount" element={<CreateAccount />} />
         <Route path="/alldoctors" element={<AllDoctors />} />
@@ -47,18 +47,18 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/Doctorlist" element={<Doctorlist />} />
         <Route path="/Admin" element={<Admin />} />
         <Route path="/ModelChat" element={<ModelChat />} />
-        <Route path="/AnimatedTestimonialsDemo" element={<AnimatedTestimonialsDemo />} />
+        <Route
+          path="/AnimatedTestimonialsDemo"
+          element={<AnimatedTestimonialsDemo />}
+        />
         <Route path="/OrderMedicin" element={<OderMedicin />} />
-        <Route path="/Shop" element={<Shop/>} />
-        <Route path="/Shopcards" element={<Shopcards/>} />
-        <Route path="/MedicalEquipment" element={<MedicalEquipment/>} />
-        <Route path="/BotCard" element={<BotCard/>} />\
-        <Route path="/SpecialitySection" element={<SpecialitySection/>} />
-        <Route path="/Shopcard" element={<ShopHeader/>} />
-
-
-
+        <Route path="/Shop" element={<Shop />} />
+        <Route path="/Shopcards" element={<Shopcards />} />
+        <Route path="/MedicalEquipment" element={<MedicalEquipment />} />
+        <Route path="/BotCard" element={<BotCard />} />\
+        <Route path="/SpecialitySection" element={<SpecialitySection />} />
+        <Route path="/Shopcard" element={<ShopHeader />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
