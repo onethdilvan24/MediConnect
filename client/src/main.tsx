@@ -50,13 +50,12 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/ModelChat" element={<ModelChat />} />
         <Route path="/AnimatedTestimonialsDemo" element={<AnimatedTestimonialsDemo />}/>
         <Route path="/OrderMedicin" element={<OderMedicin />} />
-
-        <Route path="/Shop" element={<Shop />} />
-        <Route path="/Shopcards" element={<Shopcards />} />
-        <Route path="/MedicalEquipment" element={<MedicalEquipment />} />
-        <Route path="/BotCard" element={<BotCard />} />\
-        <Route path="/SpecialitySection" element={<SpecialitySection />} />
-        <Route path="/Shopcard" element={<ShopHeader />} />
+        <Route path="/Shop" element={<Shop/>} />
+        <Route path="/Shopcards" element={<Shopcards/>} />
+        <Route path="/MedicalEquipment" element={<MedicalEquipment/>} />
+        <Route path="/BotCard" element={<BotCard/>} />\
+        <Route path="/SpecialitySection" element={<SpecialitySection/>} />
+        <Route path="/Shopcard" element={<ShopHeader/>} />
         <Route path="/PaymentAddress" element={<PaymentAddress/>} />
       </Routes>
     </BrowserRouter>

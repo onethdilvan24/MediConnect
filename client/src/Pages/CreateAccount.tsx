@@ -3,7 +3,7 @@ import { Button, Label, TextInput } from "flowbite-react";
 import { Card } from "flowbite-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import axios, { AxiosError } from "axios";
+import axios from "axios";
 import { Nav } from "../Components/Navbar";
 
 const navigate = useNavigate();
@@ -37,6 +37,7 @@ export default function CreateAccount() {
 
   return (
     <div>
+
       <Nav></Nav>
 
 
