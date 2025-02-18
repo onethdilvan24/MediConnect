@@ -6,7 +6,7 @@ import "./index.css";
 import { Login } from "./Pages/Login";
 import { CreateAccount } from "./Pages/CreateAccount";
 import { Home } from "./Pages/Home";
-import {AllDoctors} from "./Pages/AllDoctors";
+import AllDoctors from "./Pages/AllDoctors";
 import  About  from "./Pages/About";
 import Profile from "./Pages/PationProfile";
 import BookingAppointment from "./Pages/BookAppointment";
@@ -25,6 +25,7 @@ import { Shopcards } from "./Components/ShopCards";
 import { MedicalEquipment } from "./Pages/MedicalEquipment";
 import { BotCard } from "./Components/BotCard";
 import SpecialitySection from "./Components/SpecialitySection";
+import { ShopHeader } from "./Components/ShopHeader";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -53,6 +54,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/MedicalEquipment" element={<MedicalEquipment/>} />
         <Route path="/BotCard" element={<BotCard/>} />\
         <Route path="/SpecialitySection" element={<SpecialitySection/>} />
+        <Route path="/Shopcard" element={<ShopHeader/>} />
 
 
 

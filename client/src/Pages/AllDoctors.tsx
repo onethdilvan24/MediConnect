@@ -8,6 +8,8 @@ import { Nav } from "../Components/Navbar";
 import { Foot } from "../Components/Footer";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 
 // image
@@ -15,7 +17,22 @@ import Doctor from "../Images/Doctor.png";
 
 
 
-export function AllDoctors() {
+export default function AllDoctors() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+
+
+
+
   return (
     <div>
       <Nav />
@@ -118,6 +135,7 @@ export function AllDoctors() {
 
       <motion.h1
         className="flex justify-center pt-10 text-2xl font-bold"
+        id="general"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -434,6 +452,7 @@ export function AllDoctors() {
 
       <motion.h1
         className="flex justify-center pt-10 text-2xl font-bold"
+        id="cardiologist"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -748,6 +767,7 @@ export function AllDoctors() {
 
       <motion.h1
         className="flex justify-center pt-10 text-2xl font-bold"
+        id="gynecologist"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -1060,6 +1080,7 @@ export function AllDoctors() {
 
       <motion.h1
         className="flex justify-center pt-10 text-2xl font-bold"
+        id="pediatricians"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -1371,6 +1392,7 @@ export function AllDoctors() {
 
       <motion.h1
         className="flex justify-center pt-10 text-2xl font-bold"
+        id="neurologist"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

@@ -8,14 +8,16 @@ import Dermatologist from "../Images/Dermatologist.webp";
 import Pediatricians from "../Images/Pediatricians.avif";
 import Neurologist from "../Images/Neurologist.jpg";
 import Gastroenterologist from "../Images/Gastroenterologist.jpg";
+import Cardiologist from "../Images/Cardiologist.jpg";
 
 const specialities = [
-  { name: "General physician", img: physician, link: "/physician" },
-  { name: "Gynecologist", img: Gynecologist, link: "/gynecologist" },
+  { name: "General physician", img: physician, link: "/alldoctors#general" },
+  { name: "Gynecologist", img: Gynecologist, link: "/alldoctors#gynecologist" },
   { name: "Dermatologist", img: Dermatologist, link: "/dermatologist" },
-  { name: "Pediatricians", img: Pediatricians, link: "/pediatricians" },
-  { name: "Neurologist", img: Neurologist, link: "/neurologist" },
+  { name: "Pediatricians", img: Pediatricians, link: "/alldoctors#pediatricians" },
+  { name: "Neurologist", img: Neurologist, link: "/alldoctors#neurologist" },
   { name: "Gastroenterologist", img: Gastroenterologist, link: "/gastroenterologist" },
+  { name: "Cardiologist", img: Cardiologist, link: "/alldoctors#cardiologist" },
 ];
 
 export default function SpecialitySection() {
@@ -29,7 +31,7 @@ export default function SpecialitySection() {
 
       <div className="mt-8 flex flex-wrap justify-center gap-6">
         {specialities.map((speciality, index) => (
-          <Link to={speciality.link} key={index} className="flex flex-col items-center">
+          <a href={speciality.link} key={index} className="flex flex-col items-center">
             <div className="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform">
               <img
                 src={speciality.img}
@@ -38,7 +40,7 @@ export default function SpecialitySection() {
               />
             </div>
             <p className="mt-2 text-gray-700">{speciality.name}</p>
-          </Link>
+          </a>
         ))}
       </div>
     </section>

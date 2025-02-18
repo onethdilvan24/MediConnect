@@ -3,6 +3,7 @@
 import { Nav } from "../Components/Navbar";
 import { Shopcards } from "../Components/ShopCards";
 import { motion } from "framer-motion";
+import { ShopHeader } from "../Components/ShopHeader";
 
 
 
@@ -10,6 +11,15 @@ export function Shop() {
   return (
     <div>
       <Nav></Nav>
+
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+      <ShopHeader></ShopHeader>
+      </motion.div>
 
       <motion.h1
         className="flex justify-center pt-14 text-3xl font-bold"
