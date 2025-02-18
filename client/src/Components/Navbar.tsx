@@ -5,7 +5,6 @@ import {
   NavbarCollapse,
   NavbarLink,
   NavbarToggle,
-  Dropdown,
 } from "flowbite-react";
 import { Link } from "react-router-dom";
 import Logo from "../Images/logo.png";
@@ -25,19 +24,9 @@ export function Nav() {
           <NavbarLink as={Link} to="/alldoctors" className="text-[#06283D]">
             ALL DOCTORS
           </NavbarLink>
-
-          <Dropdown label="SHOP" className="bg-[#DFF6FF]"inline>
-            <div className="flex rounded-md">
-              <div className="space-y-4">
-                <Dropdown.Item as={Link} to="/Shop">
-                  Medicine
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/MedicalEquipment">
-                  Medical Equipment
-                </Dropdown.Item>
-              </div> 
-            </div>
-          </Dropdown>
+          <NavbarLink as={Link} to="/Shop" className="text-[#06283D]">
+            SHOP
+          </NavbarLink>
 
           <NavbarLink as={Link} to="/about" className="text-[#06283D]">
             ABOUT

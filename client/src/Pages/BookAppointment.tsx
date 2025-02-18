@@ -4,11 +4,19 @@ import { useState } from "react";
 import { Button } from "flowbite-react";
 import { Nav } from "../Components/Navbar";
 import { Foot } from "../Components/Footer";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Booking() {
   return (
     <div>
       <Nav></Nav>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
       <div className="flex min-h-screen flex-col items-center pb-20">
         {/* Profile Section */}
         <div className="mt-10 flex w-full max-w-5xl flex-col px-6 pt-12 md:flex-row">
@@ -68,9 +76,10 @@ export default function Booking() {
                 ))}
               </div>
               <div className="mt-10">
+                <Link to="/MyAppointments">
             <Button className="rounded-3xl bg-[#1363DF] text-[#CFF5E7]">
             Booking Appointment
-            </Button>
+            </Button></Link>
           </div>
             </div>
 
@@ -79,6 +88,8 @@ export default function Booking() {
           
         </div>
       </div>
+
+      </motion.div>
 
       <Foot></Foot>
       

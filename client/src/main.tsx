@@ -26,6 +26,7 @@ import { MedicalEquipment } from "./Pages/MedicalEquipment";
 import { BotCard } from "./Components/BotCard";
 import SpecialitySection from "./Components/SpecialitySection";
 import { ShopHeader } from "./Components/ShopHeader";
+import { PaymentAddress } from "./Pages/PaymentAddress";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -52,6 +53,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           element={<AnimatedTestimonialsDemo />}
         />
         <Route path="/OrderMedicin" element={<OderMedicin />} />
+
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Shopcards" element={<Shopcards />} />
         <Route path="/MedicalEquipment" element={<MedicalEquipment />} />

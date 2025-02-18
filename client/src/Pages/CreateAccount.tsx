@@ -3,8 +3,7 @@ import { Button, Label, TextInput } from "flowbite-react";
 import { Card } from "flowbite-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import axios, { AxiosError } from "axios";
 
 const navigate = useNavigate();
 navigate("/createaccount");
@@ -49,7 +48,7 @@ export default function CreateAccount() {
               Create Account
             </h1>
             <p className="text-xs text-[#DFF6FF]">
-              Please sign up to book an appointment
+              Please sign up to book appointment
             </p>
           </div>
           <div>
