@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Database Config (Replace with your PostgreSQL details)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://username:password@localhost/yourdbname"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:Onethsql@$123d@localhost/register"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
