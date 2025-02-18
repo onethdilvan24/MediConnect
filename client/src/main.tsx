@@ -57,6 +57,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/SpecialitySection" element={<SpecialitySection/>} />
         <Route path="/Shopcard" element={<ShopHeader/>} />
         <Route path="/PaymentAddress" element={<PaymentAddress/>} />
+
+
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
